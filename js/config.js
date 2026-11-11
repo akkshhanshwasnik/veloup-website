@@ -2,7 +2,7 @@
 // All values in this file are visible to anyone who views the site
 
 const config = {
-  bookingLink: "https://calendar.app.google/8eBo1S6hQzDcDxXu5",
+  bookingLink: "https://calendly.com/akkshhanshwasnik-veloup/free-call",
   whatsappNumber: "+91XXXXXXXXXX",
   businessEmail: "hello@veloup.in",
   formEndpoint: "[APPS SCRIPT WEB APP ADDRESS]",
