@@ -40,7 +40,7 @@
   
   <main id="main-content">
 
-    <!-- HOME: hero with WhatsApp demo -->
+    <!-- HOME: hero with WhatsApp demo (several industries) -->
     <section class="hero wl-hero">
       <div class="container">
         <div class="hero-text">
@@ -52,30 +52,70 @@
             <a class="wl-link" href="contact.html" data-whatsapp>Chat on WhatsApp</a>
           </div>
         </div>
-        <div class="stage" role="group" aria-label="Example WhatsApp conversation (illustration): a missed call gets a reply, the customer's needs are noted, and a site visit is booked">
+        <div class="stage" aria-label="Example WhatsApp conversations (illustrations) for different businesses: the AI assistant replies, notes what the customer needs and books the next step">
           <svg class="stage-art" viewBox="0 0 120 80" fill="none" aria-hidden="true" focusable="false">
             <defs><linearGradient id="wl-g" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#6D28D9"/><stop offset=".6" stop-color="#C4B5FD"/><stop offset="1" stop-color="#67E8F9"/></linearGradient></defs>
             <path d="M100 50 C100 67 79 71 68 57 C59 45 52 27 35 27 C20 27 13 38 13 48 C13 63 31 69 45 56 C58 44 70 31 90 17" stroke="url(#wl-g)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
             <path transform="translate(92 15) rotate(-48)" d="M12 0 L-5 -11 L-5 11 Z" fill="#67E8F9" stroke="#67E8F9" stroke-width="3" stroke-linejoin="round"/>
           </svg>
-          <div class="phone">
-            <div class="phone-screen">
-              <div class="phone-top"><span class="phone-av" aria-hidden="true">YB</span><span><b>Your Business</b><small>WhatsApp &middot; replies instantly</small></span></div>
-              <div class="demo-chat" id="demo-chat">
-                <p class="dm dm-sys" data-t="400">Missed voice call &middot; 9:14 pm</p>
-                <p class="dm dm-out" data-t="1900" data-note="1"><span class="visually-hidden">Your business: </span>Hi! Sorry we missed your call &#128591; Are you looking for a 2 BHK or 3 BHK in Wakad?<time>9:14 pm</time></p>
-                <p class="dm dm-in" data-t="3300"><span class="visually-hidden">Customer: </span>3 BHK actually, budget around 1.2 Cr<time>9:16 pm</time></p>
-                <p class="dm dm-out" data-t="4700" data-note="2"><span class="visually-hidden">Your business: </span>Noted. We have 2 options in that range. Would a site visit on Saturday at 11 am work?<time>9:16 pm</time></p>
-                <p class="dm dm-in" data-t="6000"><span class="visually-hidden">Customer: </span>Yes, Saturday works &#128077;<time>9:20 pm</time></p>
-                <p class="dm dm-ok" data-t="6900" data-note="3">Site visit booked &middot; Sat 11:00 am</p>
-                <span class="dm-typing" aria-hidden="true"><i></i><i></i><i></i></span>
-              </div>
-            </div>
+          <div class="scene-tabs" role="group" aria-label="Choose a business type"><button class="scene-tab" type="button" aria-pressed="true">Real estate</button><button class="scene-tab" type="button" aria-pressed="false">Clinic</button><button class="scene-tab" type="button" aria-pressed="false">Restaurant</button><button class="scene-tab" type="button" aria-pressed="false">Coaching</button><button class="scene-tab" type="button" aria-pressed="false">Electronics</button></div>
+          <div class="phone"><div class="phone-screen">
+          <div class="phone-top"><span class="phone-av" aria-hidden="true">AI</span><span><b class="phone-name">Your Property Business</b><small>AI assistant · replies instantly</small></span></div>
+          <div class="demo-chat" data-biz="Your Property Business">
+          <p class="dm dm-sys" data-t="400">Missed voice call · 9:14 pm</p>
+          <p class="dm dm-out" data-t="1900" data-note="1"><span class="dm-who">AI assistant</span>Hi! Sorry we missed your call 🙏 Are you looking for a 2 BHK or 3 BHK in Wakad?<time>9:14 pm</time></p>
+          <p class="dm dm-in" data-t="3300"><span class="dm-who">Customer</span>3 BHK actually, budget around 1.2 Cr<time>9:16 pm</time></p>
+          <p class="dm dm-out" data-t="4700" data-note="2"><span class="dm-who">AI assistant</span>Noted. We have 2 options in that range. Would a site visit on Saturday at 11 am work?<time>9:16 pm</time></p>
+          <p class="dm dm-in" data-t="6000"><span class="dm-who">Customer</span>Yes, Saturday works 👍<time>9:20 pm</time></p>
+          <p class="dm dm-ok" data-t="6900" data-note="3">✓ Site visit booked · Sat 11:00 am</p>
           </div>
-          <p class="note note-1" aria-hidden="true"><span class="note-q">9:14 pm &middot; missed call</span>Reply sent on WhatsApp<span class="note-a">within 20 sec &#10003;</span></p>
-          <p class="note note-2" aria-hidden="true"><span class="note-q">9:16 pm &middot; needs</span>3 BHK &middot; Wakad &middot; &#8377;1.2 Cr<span class="note-a">noted for your team &#10003;</span></p>
-          <p class="note note-3" aria-hidden="true"><span class="note-q">9:21 pm &middot; booked</span>Site visit, Saturday 11 am<span class="note-a">lifted &#8599;</span></p>
-          <p class="stage-cap">an illustration of a typical evening</p>
+          <div class="demo-chat" data-biz="Your Clinic" hidden>
+          <p class="dm dm-sys" data-t="400">Missed voice call · 8:40 pm</p>
+          <p class="dm dm-out" data-t="1900" data-note="1"><span class="dm-who">AI assistant</span>Hello! Sorry we missed your call. Would you like to book an appointment with the doctor?<time>8:40 pm</time></p>
+          <p class="dm dm-in" data-t="3300"><span class="dm-who">Customer</span>Yes, for my mother. Tomorrow morning if possible<time>8:42 pm</time></p>
+          <p class="dm dm-out" data-t="4700" data-note="2"><span class="dm-who">AI assistant</span>Of course. The doctor is free at 10:30 am or 11:15 am tomorrow. Which suits you?<time>8:42 pm</time></p>
+          <p class="dm dm-in" data-t="6000"><span class="dm-who">Customer</span>10:30 please<time>8:43 pm</time></p>
+          <p class="dm dm-ok" data-t="6900" data-note="3">✓ Appointment booked · Tue 10:30 am · reminder set</p>
+          </div>
+          <div class="demo-chat" data-biz="Your Restaurant" hidden>
+          <p class="dm dm-in" data-t="400"><span class="dm-who">Customer</span>Hi, do you have a table for 6 on Saturday night?<time>7:05 pm</time></p>
+          <p class="dm dm-out" data-t="1900" data-note="1"><span class="dm-who">AI assistant</span>Hi! Yes, we do 😊 Would 8 pm or 9 pm suit you? Any occasion we should know about?<time>7:05 pm</time></p>
+          <p class="dm dm-in" data-t="3300"><span class="dm-who">Customer</span>8 pm. It&#x27;s my wife&#x27;s birthday<time>7:06 pm</time></p>
+          <p class="dm dm-out" data-t="4700" data-note="2"><span class="dm-who">AI assistant</span>Lovely! Table for 6 at 8 pm on Saturday. I&#x27;ve told the team it&#x27;s a birthday 🎂<time>7:06 pm</time></p>
+          <p class="dm dm-ok" data-t="5900" data-note="3">✓ Table booked · Sat 8:00 pm · 6 guests</p>
+          </div>
+          <div class="demo-chat" data-biz="Your Institute" hidden>
+          <p class="dm dm-in" data-t="400"><span class="dm-who">Customer</span>What are the batch timings for JEE 2027?<time>11:40 pm</time></p>
+          <p class="dm dm-out" data-t="1900" data-note="1"><span class="dm-who">AI assistant</span>Hi! We have a morning batch (7–9 am) and an evening batch (6–8 pm). Would you like a free demo class?<time>11:40 pm</time></p>
+          <p class="dm dm-in" data-t="3300"><span class="dm-who">Customer</span>Evening. Can my son come on Monday?<time>11:42 pm</time></p>
+          <p class="dm dm-out" data-t="4700" data-note="2"><span class="dm-who">AI assistant</span>Done! Demo class on Monday at 6 pm. I&#x27;ll send the address and a reminder that morning.<time>11:42 pm</time></p>
+          <p class="dm dm-ok" data-t="5900" data-note="3">✓ Demo class booked · Mon 6:00 pm</p>
+          </div>
+          <div class="demo-chat" data-biz="Your Store" hidden>
+          <p class="dm dm-in" data-t="400"><span class="dm-who">Customer</span>Do you have a 55-inch 4K TV in stock? Any EMI option?<time>6:10 pm</time></p>
+          <p class="dm dm-out" data-t="1900" data-note="1"><span class="dm-who">AI assistant</span>Yes! We have 3 models in stock, with no-cost EMI on all of them. Shall I send photos and prices?<time>6:10 pm</time></p>
+          <p class="dm dm-in" data-t="3300"><span class="dm-who">Customer</span>Yes please. Can I see them tomorrow?<time>6:12 pm</time></p>
+          <p class="dm dm-out" data-t="4700" data-note="2"><span class="dm-who">AI assistant</span>Sent ✓ I&#x27;ve noted a store visit for tomorrow at 5 pm. Ask for the TV section.<time>6:12 pm</time></p>
+          <p class="dm dm-ok" data-t="5900" data-note="3">✓ Store visit booked · tomorrow 5:00 pm</p>
+          </div>
+          <span class="dm-typing" aria-hidden="true"><i></i><i></i><i></i></span>
+          </div></div>
+          <p class="note note-1" data-scene="0" data-n="1" aria-hidden="true"><span class="note-q">9:14 pm · missed call</span>Reply sent on WhatsApp<span class="note-a">in seconds ✓</span></p>
+          <p class="note note-2" data-scene="0" data-n="2" aria-hidden="true"><span class="note-q">9:16 pm · needs</span>3 BHK · Wakad · ₹1.2 Cr<span class="note-a">noted for your team ✓</span></p>
+          <p class="note note-3" data-scene="0" data-n="3" aria-hidden="true"><span class="note-q">9:21 pm · booked</span>Site visit, Saturday 11 am<span class="note-a">booked ↗</span></p>
+          <p class="note note-1" data-scene="1" data-n="1" aria-hidden="true" hidden><span class="note-q">8:40 pm · missed call</span>Patient called after hours<span class="note-a">replied in seconds ✓</span></p>
+          <p class="note note-2" data-scene="1" data-n="2" aria-hidden="true" hidden><span class="note-q">8:42 pm · needs</span>Mother · tomorrow morning<span class="note-a">noted for reception ✓</span></p>
+          <p class="note note-3" data-scene="1" data-n="3" aria-hidden="true" hidden><span class="note-q">8:43 pm · booked</span>Tue 10:30 am + reminder<span class="note-a">no-show avoided ↗</span></p>
+          <p class="note note-1" data-scene="2" data-n="1" aria-hidden="true" hidden><span class="note-q">7:05 pm · enquiry</span>Answered during dinner rush<span class="note-a">in seconds ✓</span></p>
+          <p class="note note-2" data-scene="2" data-n="2" aria-hidden="true" hidden><span class="note-q">7:06 pm · needs</span>6 guests · birthday<span class="note-a">noted for the team ✓</span></p>
+          <p class="note note-3" data-scene="2" data-n="3" aria-hidden="true" hidden><span class="note-q">7:06 pm · booked</span>Saturday, 8 pm<span class="note-a">booked ↗</span></p>
+          <p class="note note-1" data-scene="3" data-n="1" aria-hidden="true" hidden><span class="note-q">11:40 pm · enquiry</span>Parent asked at midnight<span class="note-a">answered ✓</span></p>
+          <p class="note note-2" data-scene="3" data-n="2" aria-hidden="true" hidden><span class="note-q">11:42 pm · needs</span>JEE 2027 · evening batch<span class="note-a">noted for counsellor ✓</span></p>
+          <p class="note note-3" data-scene="3" data-n="3" aria-hidden="true" hidden><span class="note-q">11:42 pm · booked</span>Demo class, Monday 6 pm<span class="note-a">booked ↗</span></p>
+          <p class="note note-1" data-scene="4" data-n="1" aria-hidden="true" hidden><span class="note-q">6:10 pm · enquiry</span>Stock + EMI question<span class="note-a">answered ✓</span></p>
+          <p class="note note-2" data-scene="4" data-n="2" aria-hidden="true" hidden><span class="note-q">6:12 pm · needs</span>55-inch 4K · wants EMI<span class="note-a">noted for sales ✓</span></p>
+          <p class="note note-3" data-scene="4" data-n="3" aria-hidden="true" hidden><span class="note-q">6:12 pm · booked</span>Store visit, tomorrow 5 pm<span class="note-a">booked ↗</span></p>
+          <p class="stage-cap">illustrations of a typical evening</p>
         </div>
       </div>
     </section>
@@ -86,11 +126,51 @@
       <div class="container">
         <ul class="svc-grid">
           <li class="svc-item"><span class="svc-num" aria-hidden="true">01</span><h3>WhatsApp &amp; missed-call follow-up</h3><p>Every missed call gets a friendly reply in seconds, then reminders so nothing falls through.</p></li>
-          <li class="svc-item"><span class="svc-num" aria-hidden="true">02</span><h3>AI voice agent</h3><p>Answers inbound calls and follows up enquiries by phone.</p></li>
-          <li class="svc-item"><span class="svc-num" aria-hidden="true">03</span><h3>Support chatbot</h3><p>Answers common customer questions, day or night.</p></li>
-          <li class="svc-item"><span class="svc-num" aria-hidden="true">04</span><h3>Back-office automation</h3><p>Attendance, payroll calculations, billing and reporting.</p></li>
+          <li class="svc-item"><span class="svc-num" aria-hidden="true">02</span><h3>Appointment booking bot</h3><p>Books, reschedules and reminds on WhatsApp, using your real free slots.</p></li>
+          <li class="svc-item"><span class="svc-num" aria-hidden="true">03</span><h3>AI voice agent</h3><p>Answers inbound calls and follows up enquiries by phone.</p></li>
+          <li class="svc-item"><span class="svc-num" aria-hidden="true">04</span><h3>Support chatbot</h3><p>Answers common customer questions, day or night.</p></li>
+          <li class="svc-item"><span class="svc-num" aria-hidden="true">05</span><h3>Back-office automation</h3><p>Attendance, payroll calculations, billing and reporting.</p></li>
         </ul>
         <p class="svc-more"><a class="btn-text" href="services.html">See all services in detail</a></p>
+      </div>
+    </section>
+
+    <!-- HOME: who it's for -->
+    <section class="bg-white">
+      <div class="container">
+        <div class="sec-head">
+          <h2>Built for businesses that get enquiries</h2>
+          <p class="hand">if customers call or message you, it helps &mdash;</p>
+        </div>
+        <ul class="ind-grid">
+          <li class="ind-card"><span class="ind-tag">Healthcare</span><h3>Clinics &amp; hospitals</h3><p>Books appointments, answers timing and fee questions, and sends reminders so fewer patients miss visits.</p></li>
+          <li class="ind-card"><span class="ind-tag">Diagnostics</span><h3>Pathology labs</h3><p>Books home sample collection, explains test preparation and sends a message when reports are ready.</p></li>
+          <li class="ind-card"><span class="ind-tag">Property</span><h3>Real estate</h3><p>Replies to property enquiries at any hour, notes budget and area, and books site visits.</p></li>
+          <li class="ind-card"><span class="ind-tag">Food</span><h3>Restaurants &amp; caf&eacute;s</h3><p>Takes table bookings, answers menu and timing questions, and handles party enquiries.</p></li>
+          <li class="ind-card"><span class="ind-tag">Education</span><h3>Coaching &amp; institutes</h3><p>Shares batch timings and fees, books demo classes and follows up with parents.</p></li>
+          <li class="ind-card"><span class="ind-tag">Services</span><h3>Marketing agencies</h3><p>Qualifies new leads (goal, budget, timeline) and books strategy calls for your team.</p></li>
+          <li class="ind-card"><span class="ind-tag">Retail</span><h3>Electronics &amp; retail shops</h3><p>Answers stock and price questions, shares photos and EMI options, and books store visits.</p></li>
+          <li class="ind-card ind-more"><span class="ind-tag">And more</span><h3>Salons, gyms, showrooms&hellip;</h3><p>Travel agents, interior designers, car dealers. If your phone rings with enquiries, talk to us.</p></li>
+        </ul>
+      </div>
+      <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>Clinics</span><span>Pathology labs</span><span>Real estate</span><span>Restaurants</span><span>Coaching classes</span><span>Marketing agencies</span><span>Electronics shops</span><span>Salons</span><span>Gyms</span><span>Showrooms</span><span>Clinics</span><span>Pathology labs</span><span>Real estate</span><span>Restaurants</span><span>Coaching classes</span><span>Marketing agencies</span><span>Electronics shops</span><span>Salons</span><span>Gyms</span><span>Showrooms</span></div></div>
+    </section>
+
+    <!-- HOME: what businesses miss without AI -->
+    <section class="miss on-dark">
+      <div class="container">
+        <div class="sec-head">
+          <h2>What businesses quietly lose <span>without AI</span></h2>
+          <p class="lead">None of this shows up on a report. The customer simply books with whoever replied first.</p>
+        </div>
+        <ul class="miss-list">
+          <li class="miss-row"><s class="miss-without"><span>An enquiry at 9:30 pm waits until morning</span></s><span class="miss-with">Answered in seconds, day or night</span></li>
+          <li class="miss-row"><s class="miss-without"><span>The customer messaged three shops and booked with the first to reply</span></s><span class="miss-with">You're the first to reply, every time</span></li>
+          <li class="miss-row"><s class="miss-without"><span>Staff answer the same ten questions all day</span></s><span class="miss-with">The assistant handles routine questions; your team handles people</span></li>
+          <li class="miss-row"><s class="miss-without"><span>&ldquo;I'll call back later&rdquo; &mdash; and nobody does</span></s><span class="miss-with">Every lead gets a follow-up, automatically</span></li>
+          <li class="miss-row"><s class="miss-without"><span>Customers forget appointments and don't turn up</span></s><span class="miss-with">A reminder goes out before every booking</span></li>
+          <li class="miss-row"><s class="miss-without"><span>Leads are scattered across phones and chats</span></s><span class="miss-with">Every enquiry lands in one simple sheet</span></li>
+        </ul>
       </div>
     </section>
 
@@ -141,21 +221,24 @@
         <h2>Why choose us</h2>
         <ul class="why-grid">
           <li>Your customer details stay with your business</li>
-          <li>No staff replacement - we augment your team</li>
+          <li>We support your team, not replace it</li>
           <li>Start small, scale at your pace</li>
           <li>Custom quotes after your free call</li>
         </ul>
       </div>
     </section>
 
-    <!-- HOME: founder note -->
+    <!-- HOME: founders' note -->
     <section class="bg-tint">
-      <div class="container founder">
-        <span class="founder-mark"><svg class="logo-mark" viewBox="0 0 120 80" aria-hidden="true" focusable="false"><path d="M100 50 C100 67 79 71 68 57 C59 45 52 27 35 27 C20 27 13 38 13 48 C13 63 31 69 45 56 C58 44 70 31 90 17" fill="none" stroke="#C4B5FD" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/><path transform="translate(92 15) rotate(-48)" d="M13 0 L-5 -12 L-5 12 Z" fill="#67E8F9" stroke="#67E8F9" stroke-width="5" stroke-linejoin="round"/></svg></span>
-        <div>
-          <h2>Founder note</h2>
-          <p class="lead">MSc Finance and Management (University of Exeter) with hands-on restaurant operations experience. Running Pune-based AI business and helping local businesses automate.</p>
-        </div>
+      <div class="container founders-note">
+        <p class="hand">a note from the founders &mdash;</p>
+        <blockquote class="fn-quote">
+          <p>We started VeloUp because we kept seeing the same thing in Pune: good businesses, steady enquiries, and too many of them slipping away simply because nobody had a free minute to reply.</p>
+          <p>We don't think the answer is more staff or complicated software. It's a friendly assistant that replies in seconds, asks the right questions, and hands your team a lead that's ready to act on.</p>
+          <p>We're a small, new team. We'd rather earn your trust with 14 days of real results than with a big promise.</p>
+        </blockquote>
+        <p class="fn-sign"><span class="fn-names">[Founder 1 name] &amp; [Founder 2 name]</span><span class="fn-role">Co-founders, VeloUp</span></p>
+        <p><a class="btn-text" href="about.html">Read our story</a></p>
       </div>
     </section>
 
@@ -192,6 +275,6 @@
   <script src="js/config.js"></script>
   <script src="js/layout.js"></script>
   <script src="js/motion.js"></script>
-  <script src="js/home.js"></script>
+  <script src="js/demo.js"></script>
 </body>
 </html>

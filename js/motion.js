@@ -34,7 +34,7 @@
   }
 
   // 1. Scroll reveals: sections below the first screen fade in and rise once.
-  var GRIDS = '.card-grid, .bento, .why-grid, .steps, .steps-detail, .info-grid, .faq-list';
+  var GRIDS = '.card-grid, .bento, .why-grid, .steps, .steps-detail, .info-grid, .faq-list, .ind-grid, .miss-list, .founder-cards, .need-grid';
   var sections = document.querySelectorAll('main > section:not(.hero):not(.page-hero)');
   Array.prototype.forEach.call(sections, function (section) {
     var box = section.querySelector('.container');
