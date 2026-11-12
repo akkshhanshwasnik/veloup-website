@@ -9,7 +9,7 @@
   var cfg = window.config || {};
 
   var PAGES = [
-    { href: 'index.html', label: 'Home' },
+    { href: './', label: 'Home' },
     { href: 'services.html', label: 'Services' },
     { href: 'how-it-works.html', label: 'How it works' },
     { href: 'about.html', label: 'About' },
@@ -67,7 +67,7 @@
 
   function currentFile() {
     var file = window.location.pathname.split('/').pop();
-    if (file === '') { return 'index.html'; }
+    if (file === '' || file === 'index.html') { return './'; }
     // GitHub Pages also serves /about for about.html
     return /\.html$/.test(file) ? file : file + '.html';
   }
@@ -98,7 +98,7 @@
     return '' +
       '<header class="site-header">' +
         '<div class="container header-inner">' +
-          '<a class="logo" href="index.html" aria-label="VeloUp home">'+LOGO_MARK+'<span class="logo-velo">Velo</span><span class="logo-up">Up</span></a>' +
+          '<a class="logo" href="./" aria-label="VeloUp home">'+LOGO_MARK+'<span class="logo-velo">Velo</span><span class="logo-up">Up</span></a>' +
           '<nav class="site-nav" id="site-nav" aria-label="Main">' +
             '<ul class="nav-list">' + navItems() + '</ul>' +
             '<div class="nav-actions">' + bookButton('') + whatsappButton('', 'Chat on WhatsApp') + '</div>' +
@@ -131,16 +131,17 @@
         '<div class="container">' +
           '<div class="footer-grid">' +
             '<div class="footer-brand">' +
-              '<a class="logo" href="index.html" aria-label="VeloUp home">'+LOGO_MARK+'<span class="logo-velo">Velo</span><span class="logo-up">Up</span></a>' +
+              '<a class="logo" href="./" aria-label="VeloUp home">'+LOGO_MARK+'<span class="logo-velo">Velo</span><span class="logo-up">Up</span></a>' +
               '<p class="footer-tagline">You define the challenge. We build the engine.</p>' +
             '</div>' +
-            '<div><h2>Pages</h2><ul class="footer-list">' + pageLinks + '</ul></div>' +
-            '<div><h2>Contact</h2><ul class="footer-list">' +
+            '<div><p class="footer-heading">Pages</p><ul class="footer-list">' + pageLinks + '</ul></div>' +
+            '<div><p class="footer-heading">Contact</p><ul class="footer-list">' +
               '<li>' + emailHTML + '</li>' +
               '<li>WhatsApp: ' + numberHTML + '</li>' +
+              (cfg.whatsappNumber ? '<li>Call: <a href="tel:' + esc(cfg.whatsappNumber) + '">' + number + '</a></li>' : '') +
               '<li>Pune, India</li>' +
             '</ul></div>' +
-            '<div><h2>Legal</h2><ul class="footer-list">' +
+            '<div><p class="footer-heading">Legal</p><ul class="footer-list">' +
               '<li><a href="privacy.html">Privacy policy</a></li>' +
             '</ul></div>' +
           '</div>' +
