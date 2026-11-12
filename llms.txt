@@ -1,0 +1,19 @@
+# VeloUp
+
+> VeloUp is a Pune-based company that sets up AI automation for small businesses: WhatsApp and missed-call follow-up, an appointment booking bot, an AI voice agent, a support chatbot and back-office automation. New clients start with one lead source for 14 days before deciding to scale.
+
+Contact: hello@veloup.in · WhatsApp +91 86696 14407 · Pune, Maharashtra, India
+
+## Pages
+
+- [Home](https://veloup.in/): Overview of VeloUp's services and the businesses it works with.
+- [Services](https://veloup.in/services.html): WhatsApp/missed-call follow-up, appointment booking bot, AI voice agent, support chatbot and back-office automation.
+- [How it works](https://veloup.in/how-it-works.html): The 14-day start, what VeloUp needs from you and what you get.
+- [AI automation in Pune](https://veloup.in/ai-automation-pune.html): Who VeloUp helps in Pune and which areas it covers.
+- [About](https://veloup.in/about.html): The two founders, Akshansh P. Wasnik and Rupali Ramnani, and the company's values.
+- [FAQ](https://veloup.in/faq.html): Answers on cost, data safety, staff, risk and getting started.
+- [Contact](https://veloup.in/contact.html): Book a free 15-minute call or send a message.
+
+## Optional
+
+- [Privacy policy](https://veloup.in/privacy.html)
