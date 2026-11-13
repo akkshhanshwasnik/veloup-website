@@ -8,6 +8,7 @@ Contact: hello@veloup.in · WhatsApp +91 86696 14407 · Pune, Maharashtra, India
 
 - [Home](https://veloup.in/): Overview of VeloUp's services and the businesses it works with.
 - [Services](https://veloup.in/services.html): WhatsApp/missed-call follow-up, appointment booking bot, AI voice agent, support chatbot and back-office automation.
+- [WhatsApp and missed-call follow-up](https://veloup.in/whatsapp-missed-call-follow-up.html): How VeloUp replies to missed calls and WhatsApp enquiries in seconds, books the next step and follows up; setup, what you need, FAQ.
 - [How it works](https://veloup.in/how-it-works.html): The 14-day start, what VeloUp needs from you and what you get.
 - [AI automation in Pune](https://veloup.in/ai-automation-pune.html): Who VeloUp helps in Pune and which areas it covers.
 - [About](https://veloup.in/about.html): The two founders, Akshansh P. Wasnik and Rupali Ramnani, and the company's values.
